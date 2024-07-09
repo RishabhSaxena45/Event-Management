@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            text-align: center;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Showing your Guests</h1>
+    </div>
+    <table class="table">
+        <tr>
+            <td>Name</td>
+            <td>Guest 1 </td>
+            <td>Guest 1 Age</td>
+            <td>Guest 1 Gender</td>
+            <td>Guest 2 </td>
+            <td>Guest 2 Age</td>
+            <td>Guest 2 Gender</td>
+            <td>Guest 3 </td>
+            <td>Guest 3 Age</td>
+            <td>Guest 3 Gender</td>
+            <td>Guest 4 </td>
+            <td>Guest 4 Age</td>
+            <td>Guest 4 Gender</td>
+            
+        </tr>
+        {% for x in guestid %}
+        <tr>
+            <td>{{x.eventhead}}</td>
+            <td>{{x.guest1}}</td>
+            <td>{{x.guest1age}}</td>
+            <td>{{x.guest1gender}}</td>
+            <td>{{x.guest2}}</td>
+            <td>{{x.guest2age}}</td>
+            <td>{{x.guest2gender}}</td>
+            <td>{{x.guest3}}</td>
+            <td>{{x.guest3age}}</td>
+            <td>{{x.guest3gender}}</td>
+            <td>{{x.guest4}}</td>
+            <td>{{x.guest4age}}</td>
+            <td>{{x.guest4gender}}</td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

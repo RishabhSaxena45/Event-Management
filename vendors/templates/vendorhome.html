@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .heading h1{
+            text-align: center;
+            background-color: lightblue;
+        }
+        .services{
+            height: 650px;
+            width: 700px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: aliceblue;
+            box-shadow: 10px 10px 10px black;
+        }
+        .services h1{
+            text-align: center;
+            background-color: yellow
+        }
+        .add {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin: 50px;
+            float: left;
+            background-color: lightblue;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .add p{
+            text-align: center;
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .your {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin: 50px;
+            float: right;
+            background-color: lightblue;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .your p{
+            text-align: center;
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+    
+        .logout {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin: 50px;
+            float: left;
+            background-color: lightblue;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .logout p{
+            text-align: center;
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Welcome Vendor</h1>
+    </div>
+    <div class="services">
+        <h1>Services for You</h1>
+        <a href="/vendor/add"><div class="add"><p>Add Item</p></div></a>
+        <a href="/vendor/checkitem"><div class="your"><p>Check your Items</p></div></a>
+        <a href="/vendor"><div class="logout"><p>Logout</p></div></a>
+    </div>
+</body>
+</html>

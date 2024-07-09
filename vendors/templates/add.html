@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .heading h1{
+            text-align: center;
+            background-color: lightblue;
+        }
+        .formbox{
+            height: 370px;
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+            font-size: 20px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        input{
+            height: 22px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Add Deatils of the Product</h1>
+    </div>
+    <div class="formbox">
+        <br>
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Name : <input type="text" name="uname" id="" placeholder="Enter Name"></p><br>
+            <p>Price : <input type="number" name="uprice" id="" placeholder="Enter Price"></p><br>
+            Description : <textarea name="udesc" id="" cols="30" rows="10" placeholder="Enter Product Description"></textarea><br><br>
+            <p><input type="submit" value="Submit Now"></p>
+        </form>
+    </div>
+</body>
+</html>

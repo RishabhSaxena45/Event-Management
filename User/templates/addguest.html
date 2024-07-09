@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Guest</title>
+    <style>
+        .heading{
+            text-align: center;
+            background-color: lightblue;
+        }
+        .formbox{
+            height: 950px;
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+            font-size: 20px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        input{
+            height: 22px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Add your Guest</h1>
+    </div>
+    <div class="formbox">
+        <br>
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Name : <input type="text" name="uname" id="" placeholder="Enter Name"></p><br>
+            <p>Guest 1 : <input type="text" name="uguestone" id="" placeholder="Enter First Guest"></p>
+            <p>Guest 1 Age : <input type="tel" name="uguestoneage" id="" placeholder="Enter First Guest Age"></p>
+            <p>Guest 1 Gender : <input type="text" name="uguestonegender" id="" placeholder="Enter First Guest Gender"></p><br>
+
+            <p>Guest 2 : <input type="text" name="uguesttwo" id="" placeholder="Enter Second Guest"></p>
+            <p>Guest 2 Age : <input type="tel" name="uguesttwoage" id="" placeholder="Enter Second Guest Age"></p>
+            <p>Guest 2 Gender : <input type="text" name="uguesttwogender" id="" placeholder="Enter Second Guest Gender"></p><br>
+
+            <p>Guest 3 : <input type="text" name="uguestthree" id="" placeholder="Enter Third Guest"></p>
+            <p>Guest 3 Age : <input type="tel" name="uguestthreeage" id="" placeholder="Enter Third Guest Age"></p>
+            <p>Guest 3 Gender : <input type="text" name="uguestthreegender" id="" placeholder="Enter Third Guest Gender"></p><br>
+
+            <p>Guest 4 : <input type="text" name="uguestfour" id="" placeholder="Enter Fourth Guest"></p>
+            <p>Guest 4 Age : <input type="tel" name="uguestfourage" id="" placeholder="Enter Fourth Guest Age"></p>
+            <p>Guest 4 Gender : <input type="text" name="uguestfourgender" id="" placeholder="Enter Fourth Guest Gender"></p><br>
+
+            
+              <p><input type="submit" value="Submit Now"></p>
+        </form>
+    </div>
+</body>
+</html>
